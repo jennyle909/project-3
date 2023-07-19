@@ -1,0 +1,16 @@
+/* styles.css */
+
+/* Set the background color to light blue */
+body {
+    background-color: lightblue;
+  }
+  
+  /* Set the font-family to Helvetica for all elements */
+  body, p, h1, h2, h3, h4, h5, h6 {
+    font-family: "Times New Roman", Arial, sans-serif;
+  }
+  
+  /* Set the text color to #B8860B (dark goldenrod) for all text elements */
+  body, p, h1, h2, h3, h4, h5, h6 {
+    color: #B8860B;
+  }
