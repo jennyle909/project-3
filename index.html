@@ -8,15 +8,15 @@
   <title>Dash of Data</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- Our own CSS stylesheet -->
-  <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+  <link rel="stylesheet" href="styles.css" media="screen">
 </head>
 
 <body id="custom-bg">
 
   <div class="container">
     <div class="row">
-      <div class="col-md-16 jumbotron text-center" style="color:purple">
-        <h1>Weather or Not: Shedding Light on 2021 State Accidents with a Dash of Data</h1>
+      <div class="col-md-16 jumbotron text-center" style="color:#B8860B">
+        <h1><strong>Weather or Not: Shedding Light on 2021 State Accidents with a Dash of Data</strong></h1>
         <p id="text">Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
@@ -24,33 +24,26 @@
       <div class="col-md-2">
         <div class="well">
           <h4>State</h4>
+          <!-- "newSample" was name of function to detect when a new selection was made in the dropbox, we can adapt for when new selection of state, weather, or lighting-->
           <select id="selDataset1" onchange="newSample(this.value)"></select>
         </div>
         <div class="well">
-            <h4>Weather Conditions</h4>
-            <select id="selDataset2" onchange="newSample(this.value)"></select>
-          </div>
-          <div class="well">
-            <h4>Lighting Conditions</h4>
-            <select id="selDataset3" onchange="newSample(this.value)"></select>
-          </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h2 class="panel-title">Demographic Info</h2>
-          </div>
-          <div id="sample-metadata" class="panel-body"></div>
+          <h4>Weather Conditions</h4>
+          <select id="selDataset2" onchange="newSample(this.value)"></select>
+        </div>
+        <div class="well">
+          <h4>Lighting Conditions</h4>
+          <select id="selDataset3" onchange="newSample(this.value)"></select>
         </div>
       </div>
-      <div class="col-md-5">
-        <div id="bar"></div>
+      <div class="container-fluid">
       </div>
-      <div class="col-md-5">
+      <div class="container-fluid">
         <div id="gauge"></div>
       </div>
     </div>
-    <div class="row">
+    <div class="container-fluid">
       <div class="col-md-16">
-        <div id="bubble"></div>
       </div>
     </div>
   </div>
