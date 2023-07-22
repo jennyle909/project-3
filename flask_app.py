@@ -2,7 +2,7 @@
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
-from sqlalchemy import create_engine, func
+from sqlalchemy import create_engine
 from flask import Flask, jsonify
 
 #################################################
@@ -38,6 +38,7 @@ def welcome():
         f"/api/v1.0/weather_conditions<br>"
         f"/api/v1.0/accident_type<br>"
         )
+
 
 # Route for lighting conditions
 @app.route("/api/v1.0/lighting_conditions")
